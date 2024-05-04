@@ -1,0 +1,35 @@
+<div class="container my-4">
+  <a [routerLink]="['/scheduler']" class="btn btn-primary">Add Event</a>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Event Name</th>
+        <th scope="col">Start Date</th>
+        <th scope="col">End Date</th>
+        <th scope="col">Email</th>
+        <th scope="col">Mobile</th>
+        <th scope="col">Venue</th>
+        <th scope="col">Location</th>
+        <th scope="col">Person Name</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let event of events">
+        <th scope="row">{{ event.id }}</th>
+        <td>{{ event.eventName }}</td>
+        <td>{{ event.eventStartData | date:'yyyy-MM-dd' }}</td>
+        <td>{{ event.eventEndData | date:'yyyy-MM-dd' }}</td>
+        <td>{{ event.email }}</td>
+        <td>{{ event.mobile }}</td>
+        <td>{{ event.venue }}</td>
+        <td>{{ event.location }}</td>
+        <td>{{ event.personName }}</td>
+        <td><button class="btn btn-danger" (click)="deleteEvent(event.id)">☠</button></td>
+      </tr>
+      <!-- Add more rows as needed -->
+    </tbody>
+  </table>
+
+</div>

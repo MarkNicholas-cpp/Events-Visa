@@ -1,0 +1,41 @@
+<div class="container">
+    <form [formGroup]="eventForm" (ngSubmit)="onSubmit()">
+        <div class="mb-3">
+            <label for="personName" class="form-label">Person Name</label>
+            <input type="text" class="form-control" id="personName" formControlName="personName">
+          </div>
+        <div class="mb-3">
+          <label for="eventName" class="form-label">Event Name</label>
+          <input type="text" class="form-control" id="eventName" formControlName="eventName">
+        </div>
+        <div class="mb-3">
+          <label for="eventStartData" class="form-label">Event Start Date</label>
+          <input type="date" class="form-control" id="eventStartData" formControlName="eventStartData">
+        </div>
+        <div class="mb-3">
+          <label for="eventEndData" class="form-label">Event End Date</label>
+          <input type="date" class="form-control" id="eventEndData" formControlName="eventEndData">
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" formControlName="email">
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+          <label for="mobile" class="form-label">Mobile</label>
+          <input type="text" class="form-control" id="mobile" formControlName="mobile">
+        </div>
+        <div class="mb-3">
+          <label for="venue" class="form-label">Venue</label>
+          <input type="text" class="form-control" id="venue" formControlName="venue">
+        </div>
+        <div class="mb-3">
+          <label for="location" class="form-label">Location</label>
+          <input type="text" class="form-control" id="location" formControlName="location">
+        </div>
+        
+      
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+      
+</div>
