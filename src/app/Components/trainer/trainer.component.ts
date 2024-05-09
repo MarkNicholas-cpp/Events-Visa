@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Observable } from 'rxjs';
 import { Event } from 'src/app/Interfaces/event';
 import { EventService } from 'src/app/Services/Event/event.service'
@@ -8,7 +9,7 @@ import { EventService } from 'src/app/Services/Event/event.service'
   styleUrls: ['./trainer.component.css']
 })
 export class TrainerComponent implements OnInit {
-  constructor(private EventService: EventService) {
+  constructor(private EventService: EventService,private router:Router) {
 
   }
   ngOnInit(): void {
@@ -37,5 +38,8 @@ export class TrainerComponent implements OnInit {
         }
       })
     }
+  }
+  editEvent(data:Event){
+    this.router.navigate(['/scheduler',data])
   }
 }

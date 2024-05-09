@@ -6,21 +6,32 @@
       "eventStartData": "2024-05-09",
       "eventEndData": "2024-05-09",
       "email": "Marknicholas2002112@gmail.com",
-      "mobile": "7416944619",
+      "mobile": "9492684384",
       "venue": "Lakshmi Kalynamandapam",
       "location": "Guntur",
       "personName": "Mark"
     },
     {
-      "id": "fd1e",
-      "eventName": "Birthday",
+      "eventName": "Marriage",
       "eventStartData": "2024-05-12",
       "eventEndData": "2024-05-15",
       "email": "Susma@gmail.com",
       "mobile": "07416944619",
       "venue": "Lakshmi Kalynamandapam",
       "location": "Banglore",
-      "personName": "Sushma"
+      "personName": "Sushma",
+      "id": "fd1e"
+    },
+    {
+      "id": "362c",
+      "eventName": "Birthday",
+      "eventStartData": "2024-05-12",
+      "eventEndData": "2024-05-12",
+      "email": "Gopika@gmail.com",
+      "mobile": "9876685945",
+      "venue": "Lakshmi Kalynamandapam",
+      "location": "Hyd",
+      "personName": "Gopika "
     }
   ]
 }

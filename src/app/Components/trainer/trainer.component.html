@@ -1,5 +1,5 @@
 <div class="container my-4">
-  <a [routerLink]="['/scheduler']" class="btn btn-primary">Add Event</a>
+  <a [routerLink]="['/scheduler',{newRecord:true}]" class="btn btn-primary">Add Event</a>
   <table class="table">
     <thead>
       <tr>
@@ -26,7 +26,10 @@
         <td>{{ event.venue }}</td>
         <td>{{ event.location }}</td>
         <td>{{ event.personName }}</td>
-        <td><button class="btn btn-danger" (click)="deleteEvent(event.id)">☠</button></td>
+        <td class="d-flex gap-1">
+          <button class="btn btn-danger" (click)="deleteEvent(event.id)">☠</button>
+          <button class="btn btn-warning" (click)="editEvent(event)">⛏</button>
+        </td>
       </tr>
       <!-- Add more rows as needed -->
     </tbody>
